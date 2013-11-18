@@ -1,0 +1,352 @@
+body {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+}
+h1 {
+  margin: 10px 0px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  margin: 10px 0px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 41px;
+  padding-left: 20px;
+  font-family:'Open Sans', sans-serif;
+  color: #848484;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: left;
+}
+.button {
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  margin-top: 0px;
+  padding: 4px 15px;
+  float: left;
+  background-color: #e54b3f;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+.header {
+  margin-top: 100px;
+}
+.heading {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  display: block;
+  overflow: visible;
+  width: auto;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  float: left;
+  font-family: Bitter, serif;
+  font-size: 60px;
+  font-weight: 400;
+}
+.logo {
+  position: relative;
+  display: block;
+  float: left;
+}
+.heading_text {
+  position: relative;
+  display: block;
+  margin-top: 26px;
+  margin-left: 50px;
+  padding-top: 0px;
+  float: left;
+  font-family:'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+}
+.timer_box {
+  height: 50px;
+  margin-top: 70px;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+.date {
+  height: 50px;
+}
+.date_text {
+  width: 50%;
+  padding-top: 15px;
+  padding-right: 5px;
+  float: left;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: right;
+}
+.date_time {
+  width: 50%;
+  padding-top: 15px;
+  padding-left: 5px;
+  float: right;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 26px;
+  text-align: left;
+}
+.date_container {
+  position: relative;
+  height: 50px;
+  background-color: #e54b3f;
+}
+.counter {
+  position: relative;
+  height: 250px;
+  margin-bottom: 70px;
+  border-bottom: 5px solid #e54b3f;
+  background-color: white;
+}
+.days {
+  position: static;
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  padding-top: 80px;
+  float: left;
+  letter-spacing: 0px;
+}
+.numbers {
+  position: static;
+  display: inline-block;
+  height: 100px;
+  float: none;
+  font-family:'Open Sans', sans-serif;
+  font-size: 130px;
+  font-weight: 300;
+}
+.numbers_text {
+  font-family:'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+.hours {
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  padding-top: 80px;
+  float: left;
+}
+.minutes {
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  padding-top: 80px;
+  float: left;
+}
+.newsletter_container {
+  margin-top: 60px;
+}
+.newsletter_box {
+  display: inline-block;
+  width: 40%;
+  height: 300px;
+  float: left;
+  background-color: white;
+}
+.newsletter_text {
+  height: 50px;
+  padding-top: 13px;
+  padding-left: 20px;
+  background-color: #e54b3f;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+.newsletter_form {
+  display: inline;
+  width: 100%;
+  height: 70px;
+  margin-top: 32px;
+  float: left;
+}
+.newsletter_input {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 50px;
+  margin-left: 18px;
+  padding-left: 12px;
+  float: left;
+  font-size: 16px;
+}
+.about_box {
+  position: relative;
+  display: inline-block;
+  width: 55%;
+  height: 300px;
+  float: right;
+  background-color: white;
+}
+.about_text {
+  width: 100%;
+  height: 50px;
+  padding-top: 13px;
+  padding-left: 20px;
+  background-color: #e54b3f;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+}
+@media (max-width: 991px) {
+  .newsletter_form {
+    height: 60px;
+    margin-top: 5px;
+  }
+  .newsletter_input {
+    width: 200px;
+  }
+  .form {
+    height: 60px;
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  p {
+    margin-top: 30px;
+  }
+  .logo {
+    padding-left: 0px;
+  }
+  .heading_text {
+    font-size: 24px;
+  }
+  .counter {
+    margin-bottom: 40px;
+  }
+  .newsletter_box {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+  }
+  .newsletter_form {
+    margin-top: 16px;
+  }
+  .newsletter_input {
+    width: 480px;
+  }
+  .about_box {
+    width: 100%;
+  }
+}
+@media (max-width: 479px) {
+  .header {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .heading {
+    width: 100%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 50px;
+  }
+  .logo {
+    display: inline;
+    float: none;
+  }
+  .heading_text {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 26px;
+    line-height: 25px;
+  }
+  .date_text {
+    width: 100%;
+    margin-top: 5px;
+    float: none;
+    font-size: 24px;
+    text-align: center;
+  }
+  .date_time {
+    width: 100%;
+    margin-top: 0px;
+    float: none;
+    font-size: 30px;
+    text-align: center;
+  }
+  .date_container {
+    height: 100px;
+  }
+  .counter {
+    height: 200px;
+  }
+  .days {
+    padding-top: 60px;
+  }
+  .numbers {
+    font-size: 70px;
+    height: 40px;
+  }
+  .numbers_text {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .hours {
+    padding-top: 60px;
+  }
+  .minutes {
+    padding-top: 60px;
+  }
+  .newsletter_box {
+    height: 300px;
+  }
+  .newsletter_form {
+    margin-top: 20px;
+  }
+  .newsletter_input {
+    width: 230px;
+  }
+}
