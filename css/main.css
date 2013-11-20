@@ -70,7 +70,7 @@ p {
   text-decoration: none;
 }
 .header {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 .heading {
   position: relative;
@@ -106,7 +106,6 @@ p {
 .timer_box {
   height: 50px;
   margin-top: 70px;
-  background-color: rgba(0, 0, 0, 0);
   text-align: center;
 }
 .date {
@@ -141,9 +140,7 @@ p {
 .counter {
   position: relative;
   height: 250px;
-  margin-bottom: 70px;
-  border-bottom: 5px solid #e54b3f;
-  background-color: white;
+  background-color: rgba(255,255,255,0.9);
 }
 .days {
   position: static;
@@ -182,6 +179,15 @@ p {
   padding-top: 80px;
   float: left;
 }
+.loader_container {
+  margin-bottom: 70px;
+}
+.loader {
+  width: 5px;
+  display: block;
+  height: 5px;
+  background-color: #e54b3f;
+}
 .newsletter_container {
   margin-top: 60px;
 }
@@ -190,7 +196,7 @@ p {
   width: 40%;
   height: 300px;
   float: left;
-  background-color: white;
+  background-color: rgba(255,255,255,0.9);
 }
 .newsletter_text {
   height: 50px;
@@ -226,7 +232,7 @@ p {
   width: 55%;
   height: 300px;
   float: right;
-  background-color: white;
+  background-color: rgba(255,255,255,0.9);
 }
 .about_text {
   width: 100%;
