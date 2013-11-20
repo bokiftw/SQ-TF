@@ -1,5 +1,5 @@
 body {
-  background-image: url(../images/background.png);
+  /* background-image: url(../images/background.png);*/
   background-size: cover;
   background-repeat: no-repeat no-repeat;
   background-attachment: fixed;
@@ -92,6 +92,31 @@ p {
   display: block;
   float: left;
 }
+
+.triangle{
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 27px 27px 0 27px;
+  border-color: #e54b3f transparent transparent transparent;
+  position:relative;
+  left:50%;
+  margin-bottom: -27px;
+  z-index:99;
+}
+
+.triangleL{
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 27px 27px 0 27px;
+  border-color: #e54b3f transparent transparent transparent;
+  position:relative;
+  left:10%;
+  margin-bottom: -27px;
+  z-index:999;
+}
+
 .heading_text {
   position: relative;
   display: block;
@@ -196,7 +221,12 @@ p {
   width: 40%;
   height: 300px;
   float: left;
+<<<<<<< HEAD
   background-color: rgba(255,255,255,0.9);
+=======
+  background-color: white;
+  margin-bottom: 70px;
+>>>>>>> 6d85155958d4bc18dd25a43f83737f966464b214
 }
 .newsletter_text {
   height: 50px;
@@ -205,7 +235,7 @@ p {
   background-color: #e54b3f;
   font-family:'Open Sans', sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   text-align: left;
 }
@@ -232,7 +262,12 @@ p {
   width: 55%;
   height: 300px;
   float: right;
+<<<<<<< HEAD
   background-color: rgba(255,255,255,0.9);
+=======
+  background-color: white;
+  margin-bottom: 70px;
+>>>>>>> 6d85155958d4bc18dd25a43f83737f966464b214
 }
 .about_text {
   width: 100%;
@@ -242,9 +277,50 @@ p {
   background-color: #e54b3f;
   font-family:'Open Sans', sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
 }
+
+.socials {
+  width: 100%;
+  position: relative;
+  bottom:-30px;
+  left:-55px;
+}
+
+.social-icon {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: 100% 100%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.twitter {
+  background: url("../images/socials/twitter.png") center center;
+  background-size: 60px 60px;
+}
+.dribbble {
+  background: url("../images/socials/dribbble.png") center center;
+  background-size: 60px 60px;
+}
+.facebook {
+  background: url("../images/socials/facebook.png") center center;
+  background-size: 60px 60px;
+}
+.youtube {
+  background: url("../images/socials/youtube.png") center center;
+  background-size: 60px 60px;
+}
+.skype {
+  background: url("../images/socials/skype.png") center center;
+  background-size: 60px 60px;
+}
+
 @media (max-width: 991px) {
   .newsletter_form {
     height: 60px;
