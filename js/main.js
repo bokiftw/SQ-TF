@@ -12,12 +12,3 @@ $(function(){
 	// Shuffle the contents of container
 	container.shuffleLetters();
 });
-
-
-/**
-* This function animates seconds loader.
-*/
-setInterval(function(){
-	$('.loader').animate({width: "100%"});
-	$('.loader').animate({width: "0%"},0);
-},1000);
