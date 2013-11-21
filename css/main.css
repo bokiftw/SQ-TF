@@ -1,5 +1,5 @@
 body {
-  background-image: url(../images/background.png);
+  /*background-image: url(../images/background.png);*/
   background-size: cover;
   background-repeat: no-repeat no-repeat;
   background-attachment: fixed;
@@ -431,3 +431,74 @@ p {
     width: 230px;
   }
 }
+
+
+/* ***************************
+BACKGROUND IMAGE SLIDER
+*************************** */
+.sqBGimageSlideshowOverlay{
+  background-color:rgba(30,33,37,0.5);
+  /*background-image:url("../images/dotted.png");*/
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+
+ul.sqBGimageSlideshow {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  padding: 0;
+  margin: 0;
+}
+
+ul.sqBGimageSlideshow li {
+  position: absolute;
+  width: 101%;
+  height: 101%;
+  top: -0.5%;
+  left: -0.5%;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+/* If background-size supported we'll add the images to the background of the li */
+
+.backgroundsize .sqBGimageSlideshow li {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* ...and hide the images */
+.backgroundsize .sqBGimageSlideshow li img {
+  display: none;
+}
+
+.sqBGimageSlideshow li img {
+  display: block;
+  width: 100%;
+}
+
+/* Fallback */
+
+.no-js.no-backgroundsize .sqBGimageSlideshow li:first-child {
+  opacity: 1;
+}
+
+.no-js.backgroundsize .sqBGimageSlideshow li:first-child img {
+  display: block;
+}
+

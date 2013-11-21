@@ -18,7 +18,18 @@
 
   <link rel="icon" type="image/x-icon" href="favicon.png">
 
-</head><body>
+
+</head>
+<body>
+<div class="sqBGimageSlideshowOverlay"></div>
+<ul id="sqBGimageSlideshow" class="sqBGimageSlideshow">
+  <li><img src="images/1.jpg" alt="image01"/></li>
+  <li><img src="images/2.jpg" alt="image02"/></li>
+  <li><img src="images/3.jpg" alt="image03"/></li>
+  <li><img src="images/4.jpg" alt="image04"/></li>
+  <li><img src="images/5.jpg" alt="image05"/></li>
+</ul>
+
 <header class="w-container header">
   <img class="logo" src="images/logo.png" alt="logo.png">
   <h1 class="heading">Squarissimo</h1>
@@ -84,5 +95,14 @@
   <script type="text/javascript" src="js/jquery.shuffleLetters.js"></script>
   <script type="text/javascript" src="js/countdown.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+  <script type="text/javascript" src="js/sqBGimageSlideshow.js"></script>
+  <script>
+    $(function() {
+      cbpBGSlideshow.init();
+    });
+  </script>
 </body>
 </html>
