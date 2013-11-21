@@ -506,7 +506,7 @@ ul.sqBGimageSlideshow li {
 VIDEO BACKGROUND
 *************************** */
 #video_background { 
-  position: absolute; 
+  position: fixed; 
   bottom: 0px; 
   right: 0px; 
   min-width: 100%; 
