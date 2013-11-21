@@ -436,9 +436,9 @@ p {
 /* ***************************
 BACKGROUND IMAGE SLIDER
 *************************** */
-.sqBGimageSlideshowOverlay{
-  background-color:rgba(30,33,37,0.5);
-  /*background-image:url("../images/dotted.png");*/
+.bgOverlay{
+  /*background-color:rgba(30,33,37,0.5);*/
+  background-image:url("../images/dotted.png");
   width: 100%;
   height: 100%;
   position: fixed;
@@ -456,7 +456,7 @@ ul.sqBGimageSlideshow {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
   padding: 0;
   margin: 0;
 }
@@ -502,3 +502,17 @@ ul.sqBGimageSlideshow li {
   display: block;
 }
 
+/* ***************************
+VIDEO BACKGROUND
+*************************** */
+#video_background { 
+  position: absolute; 
+  bottom: 0px; 
+  right: 0px; 
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto; 
+  z-index: -2; 
+  /*overflow: hidden;*/
+}
