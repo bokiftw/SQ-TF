@@ -97,10 +97,10 @@ p {
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 20px 20px 0 20px;
+  border-width: 15px 15px 0 15px;
   border-color: #e54a3f transparent transparent transparent;
   position:relative;
-  margin-bottom: -20px;
+  margin-bottom: -15px;
   left:50%;
   z-index: 99;
 }
@@ -109,10 +109,10 @@ p {
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 20px 20px 0 20px;
+  border-width: 15px 15px 0 15px;
   border-color: #e54a3f transparent transparent transparent;
   position:relative;
-  margin-bottom: -20px;
+  margin-bottom: -15px;
   left:10%;
   z-index: 99;
 }
