@@ -70,7 +70,15 @@
           <form action="newsletter.php" class="w-clearfix newsletter_form" id="emailform" method="POST"> 
             <input class="w-input newsletter_input" type="email" placeholder="Enter your email" name="email" id="address" data-validate="validate(required, email)" />
             <input class="w-button button" type="submit" value="" data-wait="Please wait..."></input>
-          </form> 
+          </form>
+          <!-- Form validation messages  -->
+          <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form :(</p>
+          </div>
+
         </div>
         <span id="result"></span>
     </div>
