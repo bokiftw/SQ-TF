@@ -4,10 +4,13 @@
   <meta charset="utf-8">
   <title>Squarissimo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <!-- Css files included -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <!-- Google web font -->
+  <script src="js/webfont.js"></script>
   <script>
     WebFont.load({
       google: {
@@ -15,105 +18,94 @@
       }
     });
   </script>
-
-  <link rel="icon" type="image/x-icon" href="favicon.png">
-
-
 </head>
 <body>
-<!-- Comment/Uncomment this block to enable/disable image background dot overlay! -->
-<!--<div class="bgOverlay"></div>-->
-
 <!-- Comment/Uncomment this block to enable/disable video background! -->
 <!-- <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0"> 
   <source src="video/freedom.webm" type="video/webm"> 
   <source src="video/freedom.mp4" type="video/mp4">
    Video not supported
-</video> -->
+ </video> -->
 
 <!-- Comment/Uncomment this block to enable/disable image background slider! -->
-<ul id="sqBGimageSlideshow" class="sqBGimageSlideshow">
+ <ul id="sqBGimageSlideshow" class="sqBGimageSlideshow">
   <li><img src="images/1.jpg" alt="image01"/></li>
   <li><img src="images/2.jpg" alt="image02"/></li>
   <li><img src="images/3.jpg" alt="image03"/></li>
   <li><img src="images/4.jpg" alt="image04"/></li>
   <li><img src="images/5.jpg" alt="image05"/></li>
 </ul>
-
+<!-- Header section with logo and heading text -->
 <header class="w-container header">
   <img class="logo" src="images/logo.png" alt="logo.png">
   <h1 class="heading">Squarissimo</h1>
   <div class="heading_text">Awesome new project is coming soon!</div>
 </header>
-<div class="w-container timer_box">
-  <div class="w-container date_container">
-    <div class="date_text">We're lunching on</div>
-    <div class="date_time" id="shuffle">
-      <span id="shuffle_text">March, 3rd 2014</span>
-    </div>
+<!-- Announcement date container -->
+<div class="w-container date_container">
+  <div class="date_text">We're lunching on</div>
+  <div class="date_time" id="shuffle">
+    <span id="shuffle_text">March, 3rd 2014</span>
   </div>
-  <div class="w-container counter">
-    <div class="days">
-      
-    </div>
-    <div class="hours">
-      
-    </div>
-    <div class="minutes">
-      
-    </div>
-  </div>
-  <div class="w-container loader_container">
-    <span class="loader"></span>
-  </div>
-  <div class="w-container">
-    <div class="newsletter_box">
-      <div class="newsletter_text">Newsletter</div>
-      <p>We're making something awesome. If you want to know what, and when we'll be done, leave us your email and we'll let you know as soon as possible.</p>
-        <div class="w-form w-clearfix">
+</div>
+<!-- Counter container  -->
+<div class="w-container counter">
+  <div class="days"></div>
+  <div class="hours"></div>
+  <div class="minutes"></div>
+</div>
+<!-- Animated seconds loader container   -->
+<div class="w-container loader_container">
+  <span class="loader"></span>
+</div>
+<!-- Newsletter and about container   -->
+<div class="w-container">
+  <div class="newsletter_box"> <!-- Newsletter -->
+    <div class="newsletter_text">Newsletter</div>
+    <p>We're making something awesome. If you want to know what, and when we'll be done, leave us your email and we'll let you know as soon as possible.</p>
+    <div class="w-form w-clearfix"> <!-- Mailchimp newsletter form -->
+      <form class="w-clearfix newsletter_form" name="email-form" data-name="Email Form" action="http://djuradj.us3.list-manage.com/subscribe/post" method="POST">
+        <input type="hidden" name="u" value="aeebb53c6392b0332c65fb7cd">
+        <input type="hidden" name="id" value="8f38fc2ebd">
+        <input class="w-input newsletter_input" type="email" name="MERGE0" placeholder="Enter your email address" data-name="Email" required="required"></input>
+        <input class="w-button button" type="submit" value="&gt;" data-wait="Please wait..."></input>
+      </form>
 
-          <form class="w-clearfix newsletter_form" name="email-form" data-name="Email Form" action="http://djuradj.us3.list-manage.com/subscribe/post" method="POST">
-            <input type="hidden" name="u" value="aeebb53c6392b0332c65fb7cd">
-            <input type="hidden" name="id" value="8f38fc2ebd">
-            <input class="w-input newsletter_input" type="email" name="MERGE0" placeholder="Enter your email address" data-name="Email" required="required"></input>
-            <input class="w-button button" type="submit" value="&gt;" data-wait="Please wait..."></input>
-          </form>
-
-          <div class="w-form-done">
-            <p>Thank you! Your submission has been received!</p>
-          </div>
-          <div class="w-form-fail">
-            <p>Oops! Something went wrong while submitting the form :(</p>
-          </div>
-        </div>
+      <div class="w-form-done">
+        <p>Thank you! Your submission has been received!</p>
       </div>
-      <div class="about_box">
-        <div class="about_text">About Us</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
-
-          <div class="socials">
-            <a href="#"><span class="twitter social-icon"></span></a>
-            <a href="#"><span class="dribbble social-icon"></span></a>
-            <a href="#"><span class="facebook social-icon"></span></a>
-            <a href="#"><span class="youtube social-icon"></span></a>
-            <a href="#"><span class="skype social-icon"></span></a>
-          </div>
-
+      <div class="w-form-fail">
+        <p>Oops! Something went wrong while submitting the form :(</p>
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.shuffleLetters.js"></script>
-  <script type="text/javascript" src="js/countdown.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <div class="about_box"> <!-- About -->
+    <div class="about_text">About Us</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+    <!-- Social icons  -->
+    <div class="socials">
+      <a href="#"><span class="twitter social-icon"></span></a>
+      <a href="#"><span class="dribbble social-icon"></span></a>
+      <a href="#"><span class="facebook social-icon"></span></a>
+      <a href="#"><span class="youtube social-icon"></span></a>
+      <a href="#"><span class="skype social-icon"></span></a>
+    </div>
 
-  <script type="text/javascript" src="js/modernizr.custom.js"></script>
-  <script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
-  <script type="text/javascript" src="js/sqBGimageSlideshow.js"></script>
-  <script>
-    $(function() {
-      cbpBGSlideshow.init();
-    });
-  </script>
+  </div>
+</div>
+</div>
+<!-- Javascript files inluded -->
+<script type="text/javascript" src="js/jquery1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.shuffleLetters.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" src="js/sqBGimageSlideshow.js"></script>
+<!-- Background slider call function  -->
+<script>
+  $(function() {
+    cbpBGSlideshow.init();
+  });
+</script>
 </body>
 </html>
