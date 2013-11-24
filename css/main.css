@@ -64,10 +64,19 @@ p {
   margin-top: 0px;
   padding: 4px 15px;
   float: left;
-  background-color: #e54b3f;
   color: white;
   font-size: 18px;
   text-decoration: none;
+  background:#e54b3f url('../images/play.png') center no-repeat;
+
+    -moz-transition: background .3s ease-in;
+    -o-transition: background .3s ease-in;
+    -webkit-transition: background .3s ease-in;
+    transition: background .3s ease-in;
+}
+
+.button:hover{
+  background: rgb(220,55,65) url('../images/play.png') center no-repeat;
 }
 .header {
   margin-top: 90px;
@@ -298,23 +307,23 @@ p {
 * More social icons are included in image folder. Add whatever you like.
 */
 .twitter {
-  background: url("../images/socials/Twitter.png") center center;
+  background: url("../images/socials/social-005_twitter.png") center center;
   background-size: 50px 50px;
 }
 .dribbble {
-  background: url("../images/socials/Dribbble.png") center center;
+  background: url("../images/socials/social-042_dribbble.png") center center;
   background-size: 50px 50px;
 }
 .facebook {
-  background: url("../images/socials/Facebook.png") center center;
+  background: url("../images/socials/social-006_facebook.png") center center;
   background-size: 50px 50px;
 }
 .youtube {
-  background: url("../images/socials/Youtube.png") center center;
+  background: url("../images/socials/social-018_youtube.png") center center;
   background-size: 50px 50px;
 }
 .skype {
-  background: url("../images/socials/Skype.png") center center;
+  background: url("../images/socials/social-007_skype.png") center center;
   background-size: 50px 50px;
 }
 
