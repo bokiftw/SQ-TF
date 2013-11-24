@@ -1,4 +1,4 @@
-<?php
+<?php     
 $apiKey = '1bffeca9a96e5b88a5188e1151dec09a-us3';
 $listId = '8f38fc2ebd';
 $double_optin=false;
