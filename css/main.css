@@ -230,7 +230,6 @@ p {
   margin-bottom: 70px;
 }
 .loader {
-  width: 5px;
   display: block;
   height: 5px;
   background-color: #e54b3f;
@@ -314,18 +313,14 @@ p {
 }
 .socials {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 35px;
+  margin-bottom: 10px;
   position: relative;
   text-align: center;
-  bottom:20px;
-  padding-left: 20px;
-}
-.socials a {
-  float: left;
 }
 .social-icon {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   display: inline-block;
   -webkit-background-size: 100% 100%;
   -moz-background-size: contain;
@@ -333,29 +328,30 @@ p {
   background-size: 100% 100%;
   margin-right: 10px;
   position: relative;
+  opacity: 0.7;
 }
 /**
 * More social icons are included in image folder. Add whatever you like.
 */
 .twitter {
   background: url("../images/socials/social-005_twitter.png") center center;
-  background-size: 50px 50px;
+  background-size: contain;
 }
 .dribbble {
   background: url("../images/socials/social-042_dribbble.png") center center;
-  background-size: 50px 50px;
+  background-size: contain;
 }
 .facebook {
   background: url("../images/socials/social-006_facebook.png") center center;
-  background-size: 50px 50px;
+  background-size: contain;
 }
 .youtube {
   background: url("../images/socials/social-018_youtube.png") center center;
-  background-size: 50px 50px;
+  background-size: contain;
 }
 .skype {
   background: url("../images/socials/social-007_skype.png") center center;
-  background-size: 50px 50px;
+  background-size: contain;
 }
 
 
@@ -363,6 +359,17 @@ p {
 /*------------------------------------*\
     $BACKGROUND IMAGE SLIDER
 \*------------------------------------*/
+.bgOverlay {
+  background-image:url("../images/dotted.png");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
 ul.sqBGimageSlideshow {
   list-style: none;
   width: 100%;
@@ -439,9 +446,12 @@ ul.sqBGimageSlideshow li {
     depanding on device's width.
 \*------------------------------------*/
 @media (max-width: 991px) {
+  .newsletter_box, .about_box {
+    height: 320px;
+  }
   .newsletter_form {
     height: 60px;
-    margin-top: 5px;
+    margin-top: 15px;
   }
   .newsletter_input {
     width: 200px;
@@ -449,6 +459,9 @@ ul.sqBGimageSlideshow li {
   .form {
     height: 60px;
     float: left;
+  }
+  .socials {
+    margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -461,8 +474,8 @@ ul.sqBGimageSlideshow li {
   .heading_text {
     font-size: 24px;
   }
-  .counter {
-    margin-bottom: 40px;
+  .numbers {
+    font-size: 90px;
   }
   .newsletter_box {
     width: 100%;
@@ -477,9 +490,13 @@ ul.sqBGimageSlideshow li {
   }
   .about_box {
     width: 100%;
+    height: 250px;
+  }
+  .socials {
+    margin-top: 30px;
   }
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .header {
     margin-top: 30px;
     text-align: center;
@@ -496,25 +513,23 @@ ul.sqBGimageSlideshow li {
     float: none;
   }
   .heading_text {
-    margin-top: 20px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     font-size: 26px;
     line-height: 25px;
   }
   .date_text {
-    width: 100%;
+    width: 50%;
     margin-top: 5px;
-    float: none;
+    float: left;
     font-size: 24px;
-    text-align: center;
   }
   .date_time {
-    width: 100%;
-    margin-top: 0px;
-    float: none;
-    font-size: 30px;
-    text-align: center;
+    width: 50%;
+    margin-top: 5px;
+    float: left;
+    font-size: 26px;
   }
   .counter {
     height: 200px;
@@ -537,12 +552,33 @@ ul.sqBGimageSlideshow li {
     padding-top: 60px;
   }
   .newsletter_box {
-    height: 300px;
+    height: auto;
   }
   .newsletter_form {
     margin-top: 20px;
   }
   .newsletter_input {
-    width: 230px;
+    width: 80%;
+  }
+  .about_box {
+    height: auto;
+  }  
+}
+@media (max-width: 320px) {
+  .heading, .heading_text {
+    line-height: 30px;
+    color: #fff;
+  }
+  .date_text {
+    font-size: 18px;
+  }
+  .date_time {
+    font-size: 20px;
+  }
+  .numbers {
+    font-size: 60px;
+  }
+  .newsletter_input {
+    width: 70%;
   }
 }
